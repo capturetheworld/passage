@@ -3,16 +3,18 @@ let valley = document.getElementById('valley');
 let river = document.getElementById('river');
 let text = document.getElementById('txt');
 let stream = document.getElementById('stream');
+let streamcont = document.getElementById('streamcont');
 let nav = document.getElementById('nav');
 
 window.addEventListener('scroll', function(){
     let value = window.scrollY;
     sky.style.top = value * -0.4 + 'px';
-    valley.style.top = value * 0.05 + 'px';
+    valley.style.top = value * 0.1 + 'px';
     river.style.top = value * 0.13 + 'px';
     text.style.marginTop = value * 1 + 'px';
-    if(value/20 >= 0){
-        stream.style.objectPosition = "center " + (-140+value/20)+ 'em';
+    streamcont.style.top = value;
+    if(value <= 3000){
+        stream.style.objectPosition = "30% " + (-3001+value)+ 'px';
     }
     
     // console.log(value/10);
