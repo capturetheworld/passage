@@ -13,6 +13,10 @@
 body  {
     background-color: #BEC8DD;
     min-height: 100vh;
+    width: 100%;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar-brand{
@@ -114,3 +118,14 @@ section img#river {
     background:#000;
   }
   
+
+  #grass{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
