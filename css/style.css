@@ -3,7 +3,13 @@
     src: url("/fonts/lexend.ttf") format("ttf")
 }
   
-
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend', Lexend, sans-serif;
+    box-sizing:border-box;
+    scroll-behavior: smooth;
+}
 body  {
     background-color: #BEC8DD;
     min-height: 100vh;
@@ -46,7 +52,7 @@ section img#valley {
 }
 
 section img#river {
-    z-index: 11;
+    z-index: 10;
     opacity: 0.92;
 }
 
@@ -62,4 +68,11 @@ section img#river {
     position: relative;
     padding: 8%;
 
+}
+
+#stream{
+    position:sticky;
+    padding:0;
+    border:0;
+    
 }
