@@ -2,15 +2,16 @@
     font-family: "Lexend";
     src: url("/fonts/lexend.ttf") format("ttf")
 }
-  
-*{
+
+* {
     margin: 0;
     padding: 0;
     font-family: 'Lexend', Lexend, sans-serif;
-    box-sizing:border-box;
+    box-sizing: border-box;
     scroll-behavior: smooth;
 }
-body  {
+
+body {
     background-color: #BEC8DD;
     min-height: 100vh;
     width: 100%;
@@ -19,23 +20,23 @@ body  {
     padding: 0;
 }
 
-.navbar-brand{
+.navbar-brand {
     font-family: 'Lexend', Lexend, sans-serif;
     font-size: 20pt;
-    font-weight: 600
-;
-    color: #354127cd  !important;
+    font-weight: 600;
+    color: #354127cd !important;
     z-index: 10000;
-    
-        
+
+
 }
-.navbar{
+
+.navbar {
     /* background: linear-gradient(143deg, rgba(19,48,126,1) 0%, rgba(188,186,161,1) 100%); */
     /* height: 2%; */
     backdrop-filter: blur(5px) !important;
 }
 
-section{
+section {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -45,7 +46,7 @@ section{
     align-items: center;
 }
 
-section img{
+section img {
     position: absolute;
     top: 0;
     left: 0;
@@ -53,14 +54,14 @@ section img{
     height: 100%;
     object-fit: cover;
     z-index: -5;
-    
+
 
 }
 
 section img#valley {
     z-index: -3;
     opacity: 0.92;
-    
+
     /* object-position: center -40vw; */
 }
 
@@ -69,69 +70,70 @@ section img#river {
     opacity: 0.92;
     /* width: 80%; */
     /* object-position: center -30rem; */
-    
+
 }
 
-.content-text-center{
+.content-text-center {
     position: absolute;
     z-index: -1;
     padding: 2em;
     /* -webkit-text-shadow: 5px 5px 31px 5px rgba(0,0,0,0.18);  */
-    text-shadow: 0px 0px 9px rgba(19,48,126,0.74);
+    text-shadow: 0px 0px 9px rgba(19, 48, 126, 0.74);
 }
 
 
-#container{
+#container {
     position: relative;
     /* display:contents; */
     text-align: center;
     top: 0vw;
-   
-    margin: 10vw;
+
+    margin: 5vw;
     margin-top: 10vw;
 }
 
 
-.streamcont{
-    
+.streamcont {
+
     padding: 0%;
-    z-index: 1000;
+    z-index: -6;
     height: 200rem;
 
     position: absolute;
     top: 0%;
     left: 40%;
     /* transform: translate(-50%, -50%); */
-  /* justify-content: 50%; */
-  /* align-items: center; */
+    /* justify-content: 50%; */
+    /* align-items: center; */
     /* transform: translateY(-50%); */
-  
-    
+
+
 
 }
 
-#stream{
-    position:fixed;
+#stream {
+    position: fixed;
     /* border-bottom: 20%; */
-    padding-bottom:20vh;
-    border:0;
+    padding-bottom: 20vh;
+    border: 0;
     height: 200vh;
     display: block;
     margin-left: auto;
     margin-right: auto;
     z-index: 1000;
     object-fit: cover;
-    object-position: 30% 1000px; /* try 20px 10px */ 
+    object-position: 30% 1500px;
+    /* try 20px 10px */
     margin-top: 0px;
     /* top: 0vh; */
 }
 
-.navbar-default.scrolled{
-    background:#000;
-  }
-  
+.navbar-default.scrolled {
+    background: #000;
+}
 
-  #grass{
+
+#grass {
     position: absolute;
     width: 100%;
     height: auto;
@@ -140,4 +142,53 @@ section img#river {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(min-content, max-content);
+    grid-column-gap: 10vw;
+    grid-row-gap: 1vh;
+    grid-template-areas: 
+    "header header"
+    "content2 item3"
+    "item4 item5";
+    justify-content: center;
+}
+
+.grid-item{
+    border-radius: 10px;
+    /* background: white; */
+    padding: 2%
+}
+
+.grid-item-1 {
+    grid-area: header;
+    /* background:red; */
+    padding: 0vw;
+   
+    
+}
+
+.grid-item-2 {
+    grid-area: content2;
+    text-align: left;
+    background:orange;
+}
+
+.grid-item-3 {
+    grid-area: item3;
+    text-align: right;
+    background:yellow;
+}
+
+.grid-item-4 {
+    grid-area: item4;
+    background:green;
+}
+
+.grid-item-5 {  
+    grid-area: item5;
+    background:blue;
+}

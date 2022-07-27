@@ -13,8 +13,8 @@ window.addEventListener('scroll', function(){
     river.style.top = value * 0.13 + 'px';
     text.style.marginTop = value * 1 + 'px';
     streamcont.style.top = value;
-    if(value <= 1000){
-        stream.style.objectPosition = "30% " + (-1000+value*0.8)+ 'px';
+    if(value <= 1800){
+        stream.style.objectPosition = "30% " + (-1500+value*0.8)+ 'px';
     }
     
     // console.log(value/10);
