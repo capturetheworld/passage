@@ -483,3 +483,29 @@ html,body{
     overflow-x: hidden;
 
 }
+
+
+@media only screen and (max-width: 800px){
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: minmax(min-content, max-content);
+        grid-column-gap: 10vw;
+        grid-row-gap: 3vh;
+        grid-template-areas:
+            "header"
+            "item2"
+            "item3"
+            "item4"
+            "item5"
+            "item6"
+            "item7"
+            "item8"
+            "item9"
+            "item10"
+            "item11"
+            "item12";
+        justify-content: center;
+    }
+
+}
