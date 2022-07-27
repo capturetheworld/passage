@@ -80,14 +80,14 @@ section img {
 
 section img#valley {
     z-index: -3;
-    opacity: 0.92;
+    opacity: 1;
 
     /* object-position: center -40vw; */
 }
 
 section img#river {
     z-index: -2;
-    opacity: 0.92;
+    opacity: 1;
     /* width: 80%; */
     /* object-position: center -30rem; */
 
