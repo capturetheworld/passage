@@ -18,11 +18,12 @@ h2 {
     -webkit-background-clip: text;
     background-size: 30%;
     background-image: url('../pictures/text.png');
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.389)
 
 }
 
 body {
-    background-color: #BEC8DD;
+    background:  linear-gradient(90deg, rgba(190,200,221,1) 0%, rgba(198,199,185,1) 29%);
     min-height: 100vh;
     width: 100%;
     align-items: center;
@@ -174,7 +175,9 @@ section img#river {
         "item5 item5"
         "item6 item8"
         "item9 item10"
-        "item11 item10";
+        "item11 item10"
+        "item13 item13"
+        "item12 item12";
     justify-content: center;
 }
 
@@ -238,11 +241,19 @@ section img#river {
 }
 
 #arrow {
-    width: 30%;
+    width: 60%;
 
     object-fit: fill;
-    transform: rotate(-30deg);
+    transform: rotate(-10deg);
 }
+
+#modal {
+    width: 40%;
+
+    object-fit: fill;
+    transform: rotate(-10deg);
+}
+
 
 .grid-item-4 {
     grid-area: item4;
@@ -302,6 +313,12 @@ section img#river {
     /* transform: rotate(-30deg); */
 }
 
+#tree4 {
+    width: 80%;
+    object-fit: fill;
+    /* transform: rotate(-30deg); */
+}
+
 .grid-item-8 {
     grid-area: item8;
     background-image: url("../pictures/bg3.png");
@@ -331,6 +348,9 @@ section img#river {
     justify-content: left;
     /* background:rgba(60, 166, 187, 0.672); */
 }
+
+
+
 
 #mockup4 {
     width: 80%;
@@ -374,6 +394,27 @@ section img#river {
 .grid-item-11 > p {
     font-weight: 900;
     font-size: 2em;
+}
+
+
+.grid-item-12 {
+    grid-area: item12;
+
+}
+
+
+.grid-item-13 {
+    grid-area: item13;
+
+}
+
+#overlay{
+    position:absolute;
+    width: 15%;
+  top: 70%;
+  left: auto;
+  z-index: 1000;
+
 }
 
 
